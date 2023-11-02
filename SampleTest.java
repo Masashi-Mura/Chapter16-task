@@ -12,13 +12,13 @@ class SampleTest {
     class getColor {
         @Test
         void success() {
-            assertEquals("Ô", Sample.getColor(1));
-            assertEquals("—Î", Sample.getColor(2));
-            assertEquals("Â", Sample.getColor(3));
+            assertEquals("èµ¤", Sample.getColor(1));
+            assertEquals("ç·‘", Sample.getColor(2));
+            assertEquals("é’", Sample.getColor(3));
         }
 
         @Test
-        @DisplayName("ˆø”ƒGƒ‰[")
+        @DisplayName("å¼•æ•°ã‚¨ãƒ©ãƒ¼")
         void fail() {
         	assertThrows(IllegalArgumentException.class, () -> Sample.getColor(4));
 //            try {
